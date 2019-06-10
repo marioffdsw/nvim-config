@@ -1,0 +1,5 @@
+to add a registry entry in EXPAND-sz from a administrative powershell:
+
+reg.exe add HKEY_CLASSES_ROOT\*\shell\NeoVim\command /ve /t REG_EXPAND_SZ /d "C:\tools\neovim\Neovim\bin\nvim-qt.exe"
+reg.exe add HKEY_CURRENT_USER\Software\Classes\Directory\shell\NeoVim\command /ve /t REG_EXPAND_SZ /d "C:\tools\neovim\Neovim\bin\nvim-qt.exe"
+reg.exe add HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\NeoVim\command /ve /t REG_EXPAND_SZ /d "C:\tools\neovim\Neovim\bin\nvim-qt.exe"
