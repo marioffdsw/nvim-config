@@ -49,6 +49,9 @@ inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
+vnoremap <C-c> "*y
+nnoremap <C-v> "*p
+
 colorscheme codedark
 autocmd VimEnter * RainbowToggle
 autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css
